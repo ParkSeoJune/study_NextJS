@@ -7,6 +7,9 @@ function Home() {
       <Link href={"/users"}>
         <div>Users</div>
       </Link>
+      <Link href={"/posts"}>
+        <div>Posts</div>
+      </Link>
     </>
   );
 }
