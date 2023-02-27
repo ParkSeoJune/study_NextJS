@@ -1,12 +1,4 @@
-import { useRouter } from "next/router";
-
 function Post({ post }: any) {
-  const router = useRouter();
-
-  if (router.isFallback) {
-    return <h1>Loading...</h1>;
-  }
-
   return (
     <>
       <h2>
@@ -43,7 +35,7 @@ export async function getStaticPaths() {
         params: { postId: "3" },
       },
     ],
-    fallback: true,
+    fallback: "blocking", // blocking은 사전 렌더링 되지 않은 요청을 보낼 때 대체 페이지가 렌더링 되지 않고 바로 결과페이지를 보여줌
   };
 }
 
