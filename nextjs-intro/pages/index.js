@@ -4,12 +4,7 @@ export default function Home() {
   return (
     <div>
       <NavBar />
-      <h1 className="active">Hello</h1>
-      <style jsx>{`
-        a {
-          color: while;
-        }
-      `}</style>
+      <h1>Hello</h1>
     </div>
   );
 }
