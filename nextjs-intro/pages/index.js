@@ -7,7 +7,6 @@ const API_KEY = "0bdbe0cbefac407bbf279646b8de93ea";
 
 export default function Home({ results }) {
   const [movies, setMovies] = useState([]);
-  const router = useRouter();
 
   return (
     <div className="container">
